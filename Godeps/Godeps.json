@@ -1,0 +1,6 @@
+{
+	"ImportPath": "github.com/acomagu/fbmessenger-go",
+	"GoVersion": "go1.5",
+	"GodepVersion": "v63",
+	"Deps": []
+}
