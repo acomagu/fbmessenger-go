@@ -118,9 +118,9 @@ func SendTextMessage(recipient Recipient, sendText string) {
 	log.Print("------------------------------------------------------------")
 
 	m.Message.Text = sendText
-		
+
 	log.Print(m.Message.Text)
-		
+
 	b, err := json.Marshal(m)
 	if err != nil {
 		log.Print(err)
