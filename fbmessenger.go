@@ -102,7 +102,7 @@ func webhookHandler(w http.ResponseWriter, r *http.Request) {
 		messagingEvents := receivedMessage.Entry[0].Messaging
 		for _, event := range messagingEvents {
 			if &event.Message != nil && event.Message.Text != "" {
-				handleReceiveMessage(event)
+				handleReceiveFacebookMessage(event)
 			}
 		}
 		fmt.Fprintf(w, "Success")
